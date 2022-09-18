@@ -211,6 +211,7 @@ body {
 
 .header .header_profile .icon {
   position: relative;
+  cursor: pointer;
 }
 
 .header .header_profile .icon::before {
@@ -226,6 +227,7 @@ body {
 
 .header .header_profile img {
   width: 25px;
+  cursor: pointer;
 }
 
 /*--------------------------
