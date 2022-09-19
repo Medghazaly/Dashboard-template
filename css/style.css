@@ -311,7 +311,8 @@ body {
   opacity: 0.5;
 }
 
-.dashboard-content .welcome .button {
+.dashboard-content .welcome .button,
+.special-btn {
   font-size: 13px;
   padding: 0.3rem;
   background-color: #8e5ae9;
@@ -320,6 +321,7 @@ body {
   border-radius: 5px;
   position: absolute;
   right: 10px;
+  border: none;
 }
 
 .dashboard-content .quick .text {
@@ -652,12 +654,10 @@ body {
   padding-top: 0;
 }
 
-.tasks-content .flex5 {
+.tasks-content .flex5,
+.uploads .uploads-content .flex5 {
   padding-bottom: 0;
   border-bottom: none;
-}
-
-.tasks-content .flex-left {
 }
 
 .tasks-content .flex-left span {
@@ -772,6 +772,264 @@ body {
   border-radius: 3px;
 }
 
-.uploads; /*--------------------------
+/*--------------------------
+  Current Project
+---------------------------*/
+
+.current-project-content {
+  display: grid;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+.current-project-content .current-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.current-project-content .current-flex .circle {
+  width: 15px;
+  height: 15px;
+  background-color: #2196f3;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #2196f3;
+  position: relative;
+}
+
+.current-project-content .current-flex:not(.not) .circle::before {
+  content: "";
+  width: 3px;
+  height: 20px;
+  background-color: #2196f3;
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.current-project-content .current-flex .transparent {
+  background-color: #fff;
+}
+
+.current-project-content .current-flex span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.current-project-content .rocket {
+  text-align: right;
+  opacity: 0.5;
+}
+
+.current-project-content .rocket img {
+  margin-right: 20px;
+  width: 100px;
+}
+
+/*--------------------------
+  Reminders
+---------------------------*/
+
+.reminders-content {
+  margin-top: 15px;
+  display: grid;
+  gap: 20px;
+}
+
+.reminders-content .reminders-flex {
+}
+
+.reminders-content .reminders-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reminders-content .reminders-circle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reminders-content .reminders-circle .circle {
+  width: 15px;
+  border-radius: 50%;
+  height: 15px;
+}
+
+.reminders-content .circle1 {
+  border-right: 2px solid #2196f3;
+}
+
+.reminders-content .circle2 {
+  border-right: 2px solid #ff9800;
+}
+
+.reminders-content .circle3 {
+  border-right: 2px solid #ffeb3b;
+}
+
+.reminders-content .circle14 {
+  border-right: 2px solid #f44336;
+}
+
+.reminders-content .circle_1 {
+  background-color: #2196f3;
+}
+
+.reminders-content .circle_2 {
+  background-color: #ff9800;
+}
+
+.reminders-content .circle_3 {
+  background-color: #ffeb3b;
+}
+
+.reminders-content .circle_4 {
+  background-color: #f44336;
+}
+
+.reminders-content .reminders-text span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.reminders-content .reminders-text p {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/*--------------------------
+  Post
+---------------------------*/
+
+.post-content {
+  margin-top: 15px;
+}
+.post-content .post-flex {
+}
+
+.post-flex .post-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.post-flex .post-left .par {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.post-left .post-profile .profile {
+  width: 40px;
+}
+
+.post-left .post-text span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.post-left .post-text p {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.post-content .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  opacity: 0.5;
+}
+
+/*--------------------------
+  Social media
+---------------------------*/
+
+.social-content .content {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.social-content .tw {
+  background-color: #25a9f478;
+}
+
+.social-content .fb {
+  background-color: #1774eb80;
+}
+
+.social-content .yt {
+  background-color: #f110007d;
+}
+
+.social-content .lk {
+  background-color: #1570ae8a;
+}
+
+.social-content .content .twitter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-content .twitter .icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-content .tw .icon {
+  background-color: #25a9f4;
+}
+.social-content .fb .icon {
+  background-color: #1774eb;
+}
+.social-content .yt .icon {
+  background-color: #f11000;
+}
+.social-content .lk .icon {
+  background-color: #1570ae;
+}
+
+.social-content .twitter .icon i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.tw .special-btn {
+  background-color: #25a9f4;
+}
+.fb .special-btn {
+  background-color: #1774eb;
+}
+.yt .special-btn {
+  background-color: #f11000;
+}
+.lk .special-btn {
+  background-color: #1570ae;
+}
+
+/*--------------------------
   End Dashboard
 ---------------------------*/
