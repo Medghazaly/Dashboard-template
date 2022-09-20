@@ -285,6 +285,10 @@ body {
   .header .header_profile {
     margin-left: 0.5rem;
   }
+
+  .quick.special-container {
+    padding-bottom: 42px;
+  }
 }
 
 /*--------------------------
