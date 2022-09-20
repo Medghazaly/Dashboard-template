@@ -96,6 +96,22 @@ body {
   position: relative;
 }
 
+.background-orange {
+  background-color: orange;
+}
+
+.background-bluevoilet {
+  background-color: blueviolet;
+}
+
+.background-green-orange {
+  background-color: #8bc34a;
+}
+
+.background-red {
+  background-color: red;
+}
+
 /*--------------------------
   End Component
 ---------------------------*/
@@ -105,7 +121,7 @@ body {
 ---------------------------*/
 
 .menu {
-  width: 18%;
+  width: 16%;
   height: 100vh;
   box-shadow: 2px 0 6px 0 rgba(0, 0, 0, 0.075);
   position: fixed;
@@ -113,12 +129,14 @@ body {
 }
 
 .menu .menu_title {
-  margin: 1rem 0 2rem;
+  margin: 1rem 0.5rem 2rem;
+  font-size: 15px;
 }
 
 .menu .menu_title h3 {
-  text-align: center;
+  width: fit-content;
   position: relative;
+  margin: auto;
 }
 
 .menu .menu_title h3::before,
@@ -128,7 +146,7 @@ body {
 }
 
 .menu .menu_title h3::before {
-  width: 87.11px;
+  width: 100%;
   height: 2px;
   bottom: -20px;
   background-color: #000;
@@ -146,12 +164,18 @@ body {
 }
 
 .menu_links {
-  padding: 1rem;
+  padding: 1rem 0.5rem;
+  font-size: 12px;
 }
 
 .menu_links li {
-  padding: 0.7rem;
-  border-radius: 10px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.menu_links li:hover {
+  background-color: #eee;
 }
 
 .menu_links .active {
@@ -162,6 +186,7 @@ body {
   color: #000;
   text-decoration: none;
   display: flex;
+  align-items: center;
 }
 
 .menu_links a i {
@@ -174,7 +199,7 @@ body {
 }
 
 .header {
-  width: 82%;
+  width: 84%;
   float: right;
   display: flex;
   justify-content: space-between;
@@ -231,6 +256,34 @@ body {
 }
 
 /*--------------------------
+  Header Media
+---------------------------*/
+
+@media (max-width: 767px) {
+  .menu .menu_title {
+    margin: 1rem 0 0;
+    font-size: 10px;
+  }
+
+  .menu .menu_title h3::before,
+  .menu .menu_title h3::after {
+    display: none;
+  }
+
+  .menu_links span {
+    display: none;
+  }
+
+  .menu_links a {
+    justify-content: center;
+  }
+
+  .menu_links a i {
+    margin-right: 0;
+  }
+}
+
+/*--------------------------
   End Header
 ---------------------------*/
 
@@ -240,14 +293,14 @@ body {
 
 .dashboard {
   background-color: #00bcd41c;
-  width: 82%;
+  width: 84%;
   float: right;
   padding: 15px;
 }
 
 .dashboard-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 1rem;
 }
 
@@ -324,6 +377,33 @@ body {
   border: none;
 }
 
+/*--------------------------
+  Welcome Media
+---------------------------*/
+
+@media (max-width: 767px) {
+  .welcome .welcome-background {
+    height: 100px;
+  }
+  .welcome-background .team {
+    display: none;
+  }
+
+  .welcome-background .img-content {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  .dashboard-content .welcome-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/*--------------------------
+  Quick
+---------------------------*/
+
 .dashboard-content .quick .text {
   margin-top: 1rem;
 }
@@ -360,6 +440,10 @@ body {
   position: absolute;
   right: 10px;
 }
+
+/*--------------------------
+  Yearly
+---------------------------*/
 
 .yearly .yearly-content {
   margin-top: 1rem;
@@ -533,7 +617,17 @@ body {
   border-bottom-color: transparent;
 }
 
-.tickets .tickets-content {
+/*--------------------------
+  Tickets Media
+---------------------------*/
+
+@media (max-width: 767px) {
+  .tickets .tickets-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tickets-content {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -574,6 +668,34 @@ body {
 .tickets .tickets-content div p {
   font-size: 0.8rem;
   opacity: 0.5;
+}
+
+/*--------------------------
+  News Media
+---------------------------*/
+
+@media (max-width: 767px) {
+  .news h5 {
+    text-align: center;
+  }
+
+  .news-content .news-flex {
+    flex-direction: column;
+    border: none !important;
+  }
+
+  .news-content .news-flex .flex-left {
+    flex-direction: column;
+    gap: 5px !important;
+    margin-bottom: 5px;
+  }
+
+  .news-text {
+    text-align: center;
+  }
+  .news-content .news-text span {
+    margin-bottom: 0.5rem !important;
+  }
 }
 
 .news-content {
@@ -699,7 +821,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: 0.7rem 0;
 }
 
 .search-content .search-text .key,
@@ -829,6 +951,24 @@ body {
 }
 
 /*--------------------------
+  Current Project Media
+---------------------------*/
+
+@media (max-width: 767px) {
+  .current-project-content .rocket {
+    display: none;
+  }
+
+  .current-project-content {
+    margin-bottom: 15px;
+  }
+
+  .post-flex .post-left .par {
+    text-align: center;
+  }
+}
+
+/*--------------------------
   Reminders
 ---------------------------*/
 
@@ -954,7 +1094,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1.5rem 0 0;
   opacity: 0.5;
 }
 
@@ -963,7 +1103,7 @@ body {
 ---------------------------*/
 
 .social-content .content {
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   align-items: center;
   position: relative;
@@ -1028,6 +1168,86 @@ body {
 }
 .lk .special-btn {
   background-color: #1570ae;
+}
+
+/*--------------------------
+  Projects
+---------------------------*/
+
+.projects {
+  margin-top: 1rem;
+  overflow: auto;
+}
+
+.projects-content {
+  width: 1030px;
+}
+
+.projects-content .content {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  padding: 0.5rem;
+  background-color: #ddd;
+}
+
+.projects-content .content div {
+  font-size: 13px;
+  font-weight: bold;
+  width: 10.7rem;
+}
+
+.projects-content .details {
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  align-items: center;
+}
+
+.projects-content .details div {
+  padding: 1rem 0.5rem;
+  width: 10.7rem;
+  display: flex;
+  height: 60px;
+  border-left: 1px solid #eee;
+  align-items: center;
+  position: relative;
+}
+
+.projects-content .details .imgs {
+}
+
+.projects-content .details .avatar {
+  width: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.projects-content .details .av2 {
+  left: 22px;
+}
+
+.projects-content .details .av3 {
+  left: 37px;
+}
+
+.projects-content .details .av4 {
+  left: 50px;
+}
+
+.projects-content .details .parent button {
+  font-size: 13px;
+  padding: 0.3rem 0.7rem;
+  display: inline-block;
+  width: fit-content;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
 }
 
 /*--------------------------
