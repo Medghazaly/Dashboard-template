@@ -281,6 +281,10 @@ body {
   .menu_links a i {
     margin-right: 0;
   }
+
+  .header .header_profile {
+    margin-left: 0.5rem;
+  }
 }
 
 /*--------------------------
