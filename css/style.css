@@ -1,5 +1,11 @@
 /* Start Global Rules */
 :root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --gray-color: #888;
 }
 
 * {
@@ -8,6 +14,17 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
 }
 
 input,
@@ -105,14 +122,14 @@ body {
   background-color: #fff;
   padding: 15px 10px;
   border: 1px solid #eee;
-  border-radius: 5px;
+  border-radius: 6px;
   position: relative;
 }
 
 .active-btn,
 .desactive-btn {
-  width: 65px;
-  height: 24px;
+  width: 70px;
+  height: 26px;
   border-radius: 50px;
   position: relative;
   border: none;
@@ -121,9 +138,9 @@ body {
 
 .active-btn i {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
-  right: 1px;
+  right: 4px;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
@@ -133,7 +150,7 @@ body {
   color: #fff;
   font-size: 20px;
   position: absolute;
-  left: 1px;
+  left: 4px;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
@@ -149,6 +166,14 @@ body {
   margin-top: 20px;
 }
 
+.margin-t-none {
+  margin-top: none;
+}
+
+.margin-b-none {
+  margin-bottom: none;
+}
+
 .padding-t {
   padding-top: 0 !important;
 }
@@ -157,20 +182,24 @@ body {
   padding-bottom: 0 !important;
 }
 
+.p-ralative {
+  position: relative;
+}
+
 .background-orange {
   background-color: orange;
 }
 
 .background-bluevoilet {
-  background-color: #8e5ae9;
+  background-color: var(--blue-color);
 }
 
 .background-green-orange {
-  background-color: #8bc34a;
+  background-color: var(--orange-color);
 }
 
 .background-red {
-  background-color: red;
+  background-color: var(--red-color);
 }
 
 .background-d {
@@ -186,7 +215,7 @@ body {
 }
 
 .c-blue {
-  color: #8e5ae9;
+  color: var(--blue-color);
 }
 
 .c-black {
@@ -197,13 +226,19 @@ body {
   border: none !important;
 }
 
-.border-b {
+.border-b-none {
   border-bottom: none !important;
 }
 
 .f-bold {
   font-weight: bold;
 }
+
+/* Border */
+.rad-6 {
+  border-radius: 6px;
+}
+/* Border */
 
 /*--------------------------
   End Component

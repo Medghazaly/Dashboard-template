@@ -1,7 +1,7 @@
 /*--------------------------
   Start Dashboard
 ---------------------------*/
-
+@import url(style.css);
 .dashboard-content .welcome {
   padding: 0;
 }
@@ -117,7 +117,6 @@
 .dashboard-content .quick .button {
   font-size: 13px;
   padding: 0.3rem;
-  background-color: #8e5ae9;
   width: fit-content;
   color: #fff;
   border-radius: 5px;
@@ -334,7 +333,7 @@
 }
 
 .tickets .tickets-content .pending i {
-  color: #8e5ae9;
+  color: var(--blue-color);
 }
 
 .tickets .tickets-content .closed i {
