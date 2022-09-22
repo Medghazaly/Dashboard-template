@@ -28,7 +28,8 @@
 }
 
 input,
-textarea {
+textarea,
+:focus {
   outline: none;
 }
 
@@ -52,6 +53,14 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 1rem;
+}
+
+.special-container {
+  background-color: #fff;
+  padding: 15px 10px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  position: relative;
 }
 
 .special_title {
@@ -116,14 +125,6 @@ body {
   right: 10px;
   border: none;
   cursor: pointer;
-}
-
-.special-container {
-  background-color: #fff;
-  padding: 15px 10px;
-  border: 1px solid #eee;
-  border-radius: 6px;
-  position: relative;
 }
 
 .active-btn,
@@ -222,6 +223,10 @@ body {
   color: #000;
 }
 
+.c-gray {
+  color: var(--gray-color);
+}
+
 .border-none {
   border: none !important;
 }
@@ -239,6 +244,54 @@ body {
   border-radius: 6px;
 }
 /* Border */
+
+/* position */
+.r-none {
+  right: 0;
+}
+.l-20 {
+  left: 20px;
+}
+.l-40 {
+  left: 40px;
+}
+.l-60 {
+  left: 60px;
+}
+.l-80 {
+  left: 80px;
+}
+/* position */
+
+/* Width */
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-100 {
+  width: 100%;
+}
+/* Width */
 
 /*--------------------------
   End Component
