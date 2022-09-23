@@ -183,6 +183,10 @@ body {
   padding-bottom: 0 !important;
 }
 
+.padding-none {
+  padding: 0;
+}
+
 .p-ralative {
   position: relative;
 }
