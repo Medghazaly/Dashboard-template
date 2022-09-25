@@ -117,7 +117,7 @@ body {
 
 .special-btn {
   font-size: 13px;
-  padding: 0.3rem;
+  padding: 0.3rem 0.5rem;
   width: fit-content;
   color: #fff;
   border-radius: 5px;
@@ -172,7 +172,7 @@ body {
 }
 
 .margin-b-none {
-  margin-bottom: none;
+  margin-bottom: none !important;
 }
 
 .padding-t {
@@ -215,8 +215,15 @@ body {
   background-color: #eee;
 }
 
+.background-gray {
+  background-color: var(--gray-color);
+}
+
 .background-white {
   background-color: #fff;
+}
+.background-green {
+  background-color: var(--green-color);
 }
 
 .c-blue {
@@ -229,6 +236,14 @@ body {
 
 .c-gray {
   color: var(--gray-color);
+}
+
+.c-orange {
+  color: var(--orange-color);
+}
+
+.c-green {
+  color: var(--green-color);
 }
 
 .border-none {
@@ -296,6 +311,19 @@ body {
   width: 100%;
 }
 /* Width */
+/* box Chadow */
+.b-shadow-g {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--green-color);
+}
+
+.b-shadow-b {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--blue-color);
+}
+
+.b-shadow-o {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--orange-color);
+}
+/* box Chadow */
 
 /*--------------------------
   End Component

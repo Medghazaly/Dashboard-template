@@ -1,1 +1,77 @@
 @import url(style.css);
+
+.friends-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+}
+
+.friends-content .contact {
+  display: flex;
+  gap: 5px;
+}
+
+.friends-content .contact i {
+  font-size: 13px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.friends-content .friend-logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.friends-content .friend-logo .logo {
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.friends-content .friend-logo .special-head {
+  font-size: 16px;
+}
+
+.friends-content .infos {
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friends-content .infos .info {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.friends-content .infos .info:last-child {
+  margin-bottom: 0;
+}
+
+.friends-content .info div {
+  font-weight: 600;
+}
+
+.friends-content .vip {
+  font-size: 40px;
+  opacity: 0.5;
+}
+
+.friends-content .friend-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 0 0;
+}
+
+.friends-content .friend-profile .join {
+  font-size: 12px;
+}
