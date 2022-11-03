@@ -2,282 +2,302 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/23fc0d7061.js" crossorigin="anonymous"></script>
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/project.css">
-  <title>Dashboard | Template</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/framework.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="menu">
-    <div class="menu_title">
-      <h3>Elghazaly</h3>
+  <div class="page d-flex">
+    <div class="sidebar bg-white p-20 p-relative">
+      <h3 class="p-relative txt-c mt-0">Elghazaly</h3>
+      <ul>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+            <i class="fa-regular fa-circle-user fa-fw"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
     </div>
-    <ul class="menu_links">
-      <li>
-        <a href="index.html">
-          <i class="fa-regular fa-chart-bar"></i>
-          <span>Dashboard</span>
-        </a>
-      </li>
-      <li>
-        <a href="settings.html">
-          <i class="fa-solid fa-gear"></i>
-          <span>Settings</span>
-        </a>
-      </li>
-      <li>
-        <a href="profile.html">
-          <i class="fa-regular fa-user"></i>
-          <span>Profile</span>
-        </a>
-      </li>
-      <li class="active">
-        <a href="projects.html">
-          <i class="fa-solid fa-diagram-project"></i>
-          <span>Projects</span>
-        </a>
-      </li>
-      <li>
-        <a href="courses.html">
-          <i class="fa-sharp fa-solid fa-graduation-cap"></i>
-          <span>Courses</span>
-        </a>
-      </li>
-      <li>
-        <a href="friends.html">
-          <i class="fa-regular fa-circle-user"></i>
-          <span>Friends</span>
-        </a>
-      </li>
-      <li>
-        <a href="files.html">
-          <i class="fa-regular fa-file"></i>
-          <span>Files</span>
-        </a>
-      </li>
-      <li>
-        <a href="plans.html">
-          <i class="fa-regular fa-credit-card"></i>
-          <span>Plans</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <!-- Header -->
-  <header>
-    <div class="header">
-      <div class="form_input">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search Keyword">
-      </div>
-      <div class="header_profile">
-        <div class="icon">
-          <i class="fa-regular fa-bell"></i>
+    <div class="content w-full">
+      <!-- Start Head -->
+      <div class="head bg-white p-15 between-flex">
+        <div class="search p-relative">
+          <input class="p-10" type="search" placeholder="Type A Keyword" />
         </div>
-        <img src="imgs/avatar-profile.png" alt="">
-      </div>
-    </div>
-  </header>
-  <div class="section container">
-    <div class="special_title">
-      <h2>Projects</h2>
-    </div>
-    <div class="project-content">
-      <div class="content special-container">
-        <div class="position">15/09/2022</div>
-        <div class="text">
-          <span class="special-head2">Elghazaly Dashboard</span>
-          <p class="special-p2">Elghazaly Dashboard Project Design And Programming and Hosting</p>
-        </div>
-        <div class="imgs">
-          <img src="imgs/avatar-profile.png" alt="">
-          <img class="l-20" src="imgs/footer-vector/v1.png" alt="">
-          <img class="l-40" src="imgs/footer-vector/v2.png" alt="">
-          <img class="l-60" src="imgs/footer-vector/v3.png" alt="">
-          <img class="l-80" src="imgs/footer-vector/v4.png" alt="">
-        </div>
-        <div class="buttons">
-          <button class="special-btn r-none p-ralative  background-e c-black">Programmig</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Design</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Hosting</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Marketing</button>
-        </div>
-        <div class="earn">
-          <div class="earing-score background-d"><span class="background-red w-40"></span></div>
-          <div class="earning-d c-gray"><strong>$</strong> 2500</div>
+        <div class="icons d-flex align-center">
+          <span class="notification p-relative">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img src="imgs/avatar.png" alt="" />
         </div>
       </div>
-      <div class="content special-container">
-        <div class="position">09/08/2022</div>
-        <div class="text">
-          <span class="special-head2">Academy Portal</span>
-          <p class="special-p2">Academy Portal Project Design And Programming</p>
+      <!-- End Head -->
+      <h1 class="p-relative">Projects</h1>
+      <div class="projects-page d-grid m-20 gap-20">
+        <div class="project bg-white p-20 rad-6 p-relative">
+          <span class="date fs-13 c-grey">15/10/2021</span>
+          <h4 class="m-0">Elghazaly Dashboard</h4>
+          <p class="c-grey mt-10 mb-10 fs-14">Elghazaly Dashboard Project Design And Programming And Hosting</p>
+          <div class="team">
+            <a href="#"><img src="imgs/team-01.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-02.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-03.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-04.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-05.png" alt="" /></a>
+          </div>
+          <div class="do d-flex">
+            <span class="fs-13 rad-6 bg-eee">Programming</span>
+            <span class="fs-13 rad-6 bg-eee">Design</span>
+            <span class="fs-13 rad-6 bg-eee">Hosting</span>
+            <span class="fs-13 rad-6 bg-eee">Marketing</span>
+          </div>
+          <div class="info between-flex">
+            <div class="prog bg-eee">
+              <span class="bg-red" style="width: 50%"></span>
+            </div>
+            <div class="fs-14 c-grey">
+              <i class="fa-solid fa-dollar-sign"></i>
+              2500
+            </div>
+          </div>
         </div>
-        <div class="imgs">
-          <img src="imgs/avatar-profile.png" alt="">
-          <img class="l-20" src="imgs/footer-vector/v1.png" alt="">
-          <img class="l-40" src="imgs/footer-vector/v2.png" alt="">
+        <div class="project bg-white p-20 rad-6 p-relative">
+          <span class="date fs-13 c-grey">15/6/2022</span>
+          <h4 class="m-0">Academy Portal</h4>
+          <p class="c-grey mt-10 mb-10 fs-14">Academy Portal Project Design And Programming</p>
+          <div class="team">
+            <a href="#"><img src="imgs/team-01.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-02.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-03.png" alt="" /></a>
+          </div>
+          <div class="do d-flex">
+            <span class="fs-13 rad-6 bg-eee">Programming</span>
+            <span class="fs-13 rad-6 bg-eee">Design</span>
+          </div>
+          <div class="info between-flex">
+            <div class="prog bg-eee">
+              <span class="bg-green" style="width: 80%"></span>
+            </div>
+            <div class="fs-14 c-grey">
+              <i class="fa-solid fa-dollar-sign"></i>
+              1800
+            </div>
+          </div>
         </div>
-        <div class="buttons">
-          <button class="special-btn r-none p-ralative  background-e c-black">Programmig</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Design</button>
+        <div class="project bg-white p-20 rad-6 p-relative">
+          <span class="date fs-13 c-grey">15/6/2022</span>
+          <h4 class="m-0">Chatting Application</h4>
+          <p class="c-grey mt-10 mb-10 fs-14">Chatting Application Project Design</p>
+          <div class="team">
+            <a href="#"><img src="imgs/team-01.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-02.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-03.png" alt="" /></a>
+          </div>
+          <div class="do d-flex">
+            <span class="fs-13 rad-6 bg-eee">Design</span>
+          </div>
+          <div class="info between-flex">
+            <div class="prog bg-eee">
+              <span class="bg-blue" style="width: 100%"></span>
+            </div>
+            <div class="fs-14 c-grey">
+              <i class="fa-solid fa-dollar-sign"></i>
+              950
+            </div>
+          </div>
         </div>
-        <div class="earn">
-          <div class="earing-score background-d"><span class="background-red w-70"></span></div>
-          <div class="earning-d c-gray"><strong>$</strong> 1800</div>
+        <div class="project bg-white p-20 rad-6 p-relative">
+          <span class="date fs-13 c-grey">15/6/2022</span>
+          <h4 class="m-0">Lemin Dashboard</h4>
+          <p class="c-grey mt-10 mb-10 fs-14">Lemin Dashboard Project Design And Programming And Hosting</p>
+          <div class="team">
+            <a href="#"><img src="imgs/team-01.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-02.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-03.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-04.png" alt="" /></a>
+          </div>
+          <div class="do d-flex">
+            <span class="fs-13 rad-6 bg-eee">Programming</span>
+            <span class="fs-13 rad-6 bg-eee">Design</span>
+            <span class="fs-13 rad-6 bg-eee">Hosting</span>
+            <span class="fs-13 rad-6 bg-eee">Marketing</span>
+          </div>
+          <div class="info between-flex">
+            <div class="prog bg-eee">
+              <span class="bg-green" style="width: 60%"></span>
+            </div>
+            <div class="fs-14 c-grey">
+              <i class="fa-solid fa-dollar-sign"></i>
+              1700
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="content special-container">
-        <div class="position">15/9/2022</div>
-        <div class="text">
-          <span class="special-head2">Chatting Application</span>
-          <p class="special-p2">Chatting Application Project Design</p>
+        <div class="project bg-white p-20 rad-6 p-relative">
+          <span class="date fs-13 c-grey">15/6/2022</span>
+          <h4 class="m-0">Lemin Portal</h4>
+          <p class="c-grey mt-10 mb-10 fs-14">Lemin Portal Project Design And Programming</p>
+          <div class="team">
+            <a href="#"><img src="imgs/team-01.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-02.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-03.png" alt="" /></a>
+          </div>
+          <div class="do d-flex">
+            <span class="fs-13 rad-6 bg-eee">Programming</span>
+            <span class="fs-13 rad-6 bg-eee">Design</span>
+          </div>
+          <div class="info between-flex">
+            <div class="prog bg-eee">
+              <span class="bg-green" style="width: 70%"></span>
+            </div>
+            <div class="fs-14 c-grey">
+              <i class="fa-solid fa-dollar-sign"></i>
+              850
+            </div>
+          </div>
         </div>
-        <div class="imgs">
-          <img src="imgs/avatar-profile.png" alt="">
-          <img class="l-20" src="imgs/footer-vector/v1.png" alt="">
-          <img class="l-40" src="imgs/footer-vector/v2.png" alt="">
+        <div class="project bg-white p-20 rad-6 p-relative">
+          <span class="date fs-13 c-grey">15/6/2022</span>
+          <h4 class="m-0">Ethman Application</h4>
+          <p class="c-grey mt-10 mb-10 fs-14">Ethman Application Project Design</p>
+          <div class="team">
+            <a href="#"><img src="imgs/team-01.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-02.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-03.png" alt="" /></a>
+          </div>
+          <div class="do d-flex">
+            <span class="fs-13 rad-6 bg-eee">Design</span>
+          </div>
+          <div class="info between-flex">
+            <div class="prog bg-eee">
+              <span class="bg-red" style="width: 40%"></span>
+            </div>
+            <div class="fs-14 c-grey">
+              <i class="fa-solid fa-dollar-sign"></i>
+              950
+            </div>
+          </div>
         </div>
-        <div class="buttons">
-          <button class="special-btn r-none p-ralative  background-e c-black">Design</button>
+        <div class="project bg-white p-20 rad-6 p-relative">
+          <span class="date fs-13 c-grey">15/6/2022</span>
+          <h4 class="m-0">Ethman Dashboard</h4>
+          <p class="c-grey mt-10 mb-10 fs-14">Ethman Dashboard Project Design And Programming And Hosting</p>
+          <div class="team">
+            <a href="#"><img src="imgs/team-01.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-02.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-03.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-04.png" alt="" /></a>
+          </div>
+          <div class="do d-flex">
+            <span class="fs-13 rad-6 bg-eee">Programming</span>
+            <span class="fs-13 rad-6 bg-eee">Design</span>
+            <span class="fs-13 rad-6 bg-eee">Hosting</span>
+            <span class="fs-13 rad-6 bg-eee">Marketing</span>
+          </div>
+          <div class="info between-flex">
+            <div class="prog bg-eee">
+              <span class="bg-green" style="width: 65%"></span>
+            </div>
+            <div class="fs-14 c-grey">
+              <i class="fa-solid fa-dollar-sign"></i>
+              1950
+            </div>
+          </div>
         </div>
-        <div class="earn">
-          <div class="earing-score background-d"><span class="background-bluevoilet w-100"></span></div>
-          <div class="earning-d c-gray"><strong>$</strong> 1700</div>
+        <div class="project bg-white p-20 rad-6 p-relative">
+          <span class="date fs-13 c-grey">15/6/2022</span>
+          <h4 class="m-0">Ethman Portal</h4>
+          <p class="c-grey mt-10 mb-10 fs-14">Ethman Portal Project Design And Programming</p>
+          <div class="team">
+            <a href="#"><img src="imgs/team-01.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-02.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-03.png" alt="" /></a>
+          </div>
+          <div class="do d-flex">
+            <span class="fs-13 rad-6 bg-eee">Programming</span>
+            <span class="fs-13 rad-6 bg-eee">Design</span>
+          </div>
+          <div class="info between-flex">
+            <div class="prog bg-eee">
+              <span class="bg-green" style="width: 60%"></span>
+            </div>
+            <div class="fs-14 c-grey">
+              <i class="fa-solid fa-dollar-sign"></i>
+              1650
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="content special-container">
-        <div class="position">15/9/2022</div>
-        <div class="text">
-          <span class="special-head2">Lemin Dashboard</span>
-          <p class="special-p2">Lemin Dashboard Project Design And Programming and Hosting</p>
-        </div>
-        <div class="imgs">
-          <img src="imgs/avatar-profile.png" alt="">
-          <img class="l-20" src="imgs/footer-vector/v1.png" alt="">
-          <img class="l-40" src="imgs/footer-vector/v2.png" alt="">
-          <img class="l-60" src="imgs/footer-vector/v4.png" alt="">
-        </div>
-        <div class="buttons">
-          <button class="special-btn r-none p-ralative  background-e c-black">Programmig</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Design</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Hosting</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Marketing</button>
-        </div>
-        <div class="earn">
-          <div class="earing-score background-d"><span class="background-red w-60"></span></div>
-          <div class="earning-d c-gray"><strong>$</strong> 950</div>
-        </div>
-      </div>
-      <div class="content special-container">
-        <div class="position">09/08/2022</div>
-        <div class="text">
-          <span class="special-head2">Academy Portal</span>
-          <p class="special-p2">Academy Portal Project Design And Programming</p>
-        </div>
-        <div class="imgs">
-          <img src="imgs/avatar-profile.png" alt="">
-          <img class="l-20" src="imgs/footer-vector/v1.png" alt="">
-          <img class="l-40" src="imgs/footer-vector/v2.png" alt="">
-        </div>
-        <div class="buttons">
-          <button class="special-btn r-none p-ralative  background-e c-black">Programmig</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Design</button>
-        </div>
-        <div class="earn">
-          <div class="earing-score background-d"><span class="background-red w-60"></span></div>
-          <div class="earning-d c-gray"><strong>$</strong> 750</div>
-        </div>
-      </div>
-      <div class="content special-container">
-        <div class="position">15/9/2022</div>
-        <div class="text">
-          <span class="special-head2">Mouhamed Application</span>
-          <p class="special-p2">Mouhamed Application Project Design</p>
-        </div>
-        <div class="imgs">
-          <img src="imgs/avatar-profile.png" alt="">
-          <img class="l-20" src="imgs/footer-vector/v1.png" alt="">
-          <img class="l-40" src="imgs/footer-vector/v2.png" alt="">
-        </div>
-        <div class="buttons">
-          <button class="special-btn r-none p-ralative  background-e c-black">Design</button>
-        </div>
-        <div class="earn">
-          <div class="earing-score background-d"><span class="background-red w-30"></span></div>
-          <div class="earning-d c-gray"><strong>$</strong> 1700</div>
-        </div>
-      </div>
-      <div class="content special-container">
-        <div class="position">15/9/2022</div>
-        <div class="text">
-          <span class="special-head2">Ethman Dashboard</span>
-          <p class="special-p2">Ethman Dashboard Project Design And Programming and Hosting</p>
-        </div>
-        <div class="imgs">
-          <img src="imgs/avatar-profile.png" alt="">
-          <img class="l-20" src="imgs/footer-vector/v1.png" alt="">
-          <img class="l-40" src="imgs/footer-vector/v2.png" alt="">
-          <img class="l-60" src="imgs/footer-vector/v3.png" alt="">
-        </div>
-        <div class="buttons">
-          <button class="special-btn r-none p-ralative  background-e c-black">Programmig</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Design</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Hosting</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Marketing</button>
-        </div>
-        <div class="earn">
-          <div class="earing-score background-d"><span class="background-red w-70"></span></div>
-          <div class="earning-d c-gray"><strong>$</strong> 950</div>
-        </div>
-      </div>
-      <div class="content special-container">
-        <div class="position">09/08/2022</div>
-        <div class="text">
-          <span class="special-head2">Lemin Portal</span>
-          <p class="special-p2">Lemin Portal Project Design And Programming</p>
-        </div>
-        <div class="imgs">
-          <img src="imgs/avatar-profile.png" alt="">
-          <img class="l-20" src="imgs/footer-vector/v1.png" alt="">
-          <img class="l-40" src="imgs/footer-vector/v2.png" alt="">
-        </div>
-        <div class="buttons">
-          <button class="special-btn r-none p-ralative  background-e c-black">Programmig</button>
-          <button class="special-btn r-none p-ralative  background-e c-black">Design</button>
-        </div>
-        <div class="earn">
-          <div class="earing-score background-d"><span class="background-red w-50"></span></div>
-          <div class="earning-d c-gray"><strong>$</strong> 1750</div>
-        </div>
-      </div>
-      <div class="content special-container">
-        <div class="position">15/9/2022</div>
-        <div class="text">
-          <span class="special-head2">Ethman Application</span>
-          <p class="special-p2">Ethman Application Project Design</p>
-        </div>
-        <div class="imgs">
-          <img src="imgs/avatar-profile.png" alt="">
-          <img class="l-20" src="imgs/footer-vector/v1.png" alt="">
-          <img class="l-40" src="imgs/footer-vector/v2.png" alt="">
-        </div>
-        <div class="buttons">
-          <button class="special-btn r-none p-ralative  background-e c-black">Design</button>
-        </div>
-        <div class="earn">
-          <div class="earing-score background-d"><span class="background-red w-90"></span></div>
-          <div class="earning-d c-gray"><strong>$</strong> 1500</div>
+        <div class="project bg-white p-20 rad-6 p-relative">
+          <span class="date fs-13 c-grey">15/6/2022</span>
+          <h4 class="m-0">Ahmed Application</h4>
+          <p class="c-grey mt-10 mb-10 fs-14">Ahmed Application Project Design</p>
+          <div class="team">
+            <a href="#"><img src="imgs/team-01.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-02.png" alt="" /></a>
+            <a href="#"><img src="imgs/team-03.png" alt="" /></a>
+          </div>
+          <div class="do d-flex">
+            <span class="fs-13 rad-6 bg-eee">Design</span>
+          </div>
+          <div class="info between-flex">
+            <div class="prog bg-eee">
+              <span class="bg-green" style="width: 90%"></span>
+            </div>
+            <div class="fs-14 c-grey">
+              <i class="fa-solid fa-dollar-sign"></i>
+              950
+            </div>
+          </div>
         </div>
       </div>
     </div>
